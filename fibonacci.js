@@ -13,7 +13,7 @@ function fibs (number){
     return result
 }
 
-//console.log(fibs(8))
+console.log(fibs(8))
 
 function fibsRec (number, current = [0]){
     if (number < 2){
@@ -24,7 +24,7 @@ function fibsRec (number, current = [0]){
     }
 }
 
-// console.log(fibsRec(8))
+console.log(fibsRec(8))
 
 function oneLinerFibsRec (number, current = [0]){
     return (number < 2) ? current : oneLinerFibsRec(number-1, current.concat((current.length > 1 ? current[current.length-2] : 1) + current[current.length-1]))
