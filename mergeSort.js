@@ -15,10 +15,7 @@ function mergeSort(array){
         let mergedArray = []
 
         while (mergedArray.length < array.length){
-            //console.log('firstHalf is ' + firstHalf + ' secondHalf is ' + secondHalf)
-            //console.log('firstHalf[0] is' +firstHalf[0])
-            //console.log('secondHalf[0] is' +secondHalf[0])
-            //console.log(firstHalf[0]<secondHalf[0])
+
             if (firstHalf[0] < secondHalf[0]){
                 mergedArray.push(firstHalf[0])
                 firstHalf.shift()
@@ -28,15 +25,7 @@ function mergeSort(array){
             } else {
                 mergedArray.push(firstHalf[0])
             }
-            //console.log('adding' + mergedArray[mergedArray.length-1])
         }
-        //console.log(mergedArray)
         return mergedArray
     }
 }
-
-//console.log(mergeSort([1, 3, 4, 2]))
-
-console.log(mergeSort([1, 3, 7, 5, 6, 4, 8, 2]))
-
-//console.log(mergeSort([54, 1, 124]))
