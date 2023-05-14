@@ -8,10 +8,10 @@ function mergeSort(array){
     if (array.length < 2){
         return array
     } else {
-        let midPoint = array.length/2
+        let midPoint = parseInt(array.length/2)
         let firstHalf = mergeSort(array.slice(0, midPoint))
         let secondHalf = mergeSort(array.slice(midPoint, array.length))
-
+        
         let mergedArray = []
 
         while (mergedArray.length < array.length){
@@ -24,6 +24,7 @@ function mergeSort(array){
                 secondHalf.shift()
             } else {
                 mergedArray.push(firstHalf[0])
+                firstHalf.shift()
             }
         }
         return mergedArray
